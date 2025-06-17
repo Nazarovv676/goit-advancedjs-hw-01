@@ -13,24 +13,33 @@
     />
     <script type="module" crossorigin src="/goit-advancedjs-hw-01/2-form.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-advancedjs-hw-01/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-XA30Etah.css">
+    <link rel="stylesheet" crossorigin href="/goit-advancedjs-hw-01/assets/styles-BaM_e0Kn.css">
   </head>
 
   <body>
     <main>
       <div class="container">
         <a class="navigation-link" href="./index.html">Back</a>
-        <div class="form-container">
-          <form class="feedback-form" autocomplete="off">
-            <label class="email">
+        <div class="contact-form__container">
+          <form class="contact-form" autocomplete="off">
+            <label class="contact-form__field contact-form__field--email">
               Email
-              <input type="email" name="email" autofocus />
+              <input
+                type="email"
+                name="email"
+                class="contact-form__input contact-form__input--email"
+                autofocus
+              />
             </label>
-            <label class="message">
+            <label class="contact-form__field contact-form__field--message">
               Message
-              <textarea name="message" rows="8"></textarea>
+              <textarea
+                name="message"
+                class="contact-form__input contact-form__input--message"
+                rows="8"
+              ></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit" class="contact-form__submit">Submit</button>
           </form>
         </div>
       </div>
